@@ -1,0 +1,162 @@
+/* Fonts  */
+@font-face {
+  font-family: OswaldR;
+  src: url(../Fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 0 110px;
+}
+
+/*  Header start */
+
+.header {
+  padding: 8px 0;
+  margin: 10px 0;
+}
+.header,
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.left .logo {
+  margin-right: 10px;
+}
+.header .left .navigation {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.header .left .navigation a {
+  font-family: OswaldR;
+  text-decoration: none;
+  margin-left: 28px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  position: relative;
+}
+
+.header .left .navigation a::after {
+  content: "";
+  width: 0;
+  height: 2.5px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  background-color: #0057ff;
+  display: inline-block;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.header .left .navigation a:hover::after {
+  width: 100%;
+}
+
+.header .right button {
+  padding: 10px 35px;
+  background: #0057ff;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  font-family: OswaldR;
+  border: solid 1px #0057ff;
+  transition: all 0.5s ease;
+}
+.header .right button:hover {
+  background-color: white;
+  color: #0057ff;
+  box-sizing: border-box;
+  box-shadow: 7px 5px #0057ff;
+}
+
+/* Header/banner start */
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.banner .left h1 {
+  font-family: OswaldR;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: -150px;
+  padding-bottom: 50px;
+}
+.banner .left p {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+.banner .left .profil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.banner .left .profil img {
+  width: 80px;
+  padding-right: 15px;
+}
+.banner .left .profil .proab h4 {
+  font-family: OswaldR;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.banner .left .profil .proab i {
+  width: 18px;
+  color: #ffca28;
+}
+.banner .left button {
+  padding: 10px 35px;
+  
+  border-radius: 30px;
+  background: #ffa332;
+  border: 1px solid #ffa332;
+  font-family: OswaldR;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.banner .left button:hover {
+  background-color: white;
+  color: #ffa332;
+  box-sizing: border-box;
+  box-shadow: 7px 5px #ffa332;
+}
