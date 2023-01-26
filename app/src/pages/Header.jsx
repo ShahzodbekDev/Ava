@@ -25,6 +25,7 @@ const Header = () => {
 
             <a href="#">contact</a>
           </div>
+          <div className="mobikebar"></div>
         </div>
         <div className="right">
           <button>Purchase template</button>
